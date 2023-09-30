@@ -16,7 +16,7 @@ public:
 		if (this->String != nullptr)delete this->String;
 
 	}
-	// Перегрузка оператора присваивания для int
+	// ГЏГҐГ°ГҐГЈГ°ГіГ§ГЄГ  Г®ГЇГҐГ°Г ГІГ®Г°Г  ГЇГ°ГЁГ±ГўГ ГЁГўГ Г­ГЁГї Г¤Г«Гї int
 	dynamic& operator=(const int& other) {
 		if (typeid(other) == typeid(int)) {
 			delete Float;
@@ -32,7 +32,7 @@ public:
 		return *this;
 	}
 
-	// Перегрузка оператора присваивания для float
+	// ГЏГҐГ°ГҐГЈГ°ГіГ§ГЄГ  Г®ГЇГҐГ°Г ГІГ®Г°Г  ГЇГ°ГЁГ±ГўГ ГЁГўГ Г­ГЁГї Г¤Г«Гї float
 	dynamic& operator=(const float& other) {
 		if (typeid(other) == typeid(float)) {
 			delete Int;
@@ -48,7 +48,7 @@ public:
 		return *this;
 	}
 
-	// Перегрузка оператора присваивания для std::string
+	// ГЏГҐГ°ГҐГЈГ°ГіГ§ГЄГ  Г®ГЇГҐГ°Г ГІГ®Г°Г  ГЇГ°ГЁГ±ГўГ ГЁГўГ Г­ГЁГї Г¤Г«Гї std::string
 	dynamic& operator=(const std::string& other) {
 		if (typeid(other) == typeid(std::string)) {
 			delete Int;
@@ -78,9 +78,3 @@ public:
 		return t;
 	}
 };
-
-int main() {
-	dynamic a;
-	a = 213;
-	std::cout << a;
-}
